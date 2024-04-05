@@ -1,10 +1,12 @@
 {
   "name": "dev_nahyan_k_atm_machine",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "description": "This is CLI based Atm Machine. (PIN:8040)",
   "main": "index.js",
   "type": "module",
-  "bin": "index.js",
+  "bin": {
+    "dev_nahyan_k_atm_machine": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
