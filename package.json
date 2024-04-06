@@ -1,6 +1,6 @@
 {
   "name": "dev_nahyan_k_atm_machine",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "description": "This is CLI based Atm Machine. (PIN:8040)",
   "main": "index.js",
   "type": "module",

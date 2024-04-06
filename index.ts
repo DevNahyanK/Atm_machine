@@ -4,12 +4,13 @@ import inquirer from "inquirer";
 import chalk from "chalk";
 
 // Bank Balance
-let myBalance = 15000;"$"
+let myBalance = 15000;
+("$");
 // Pin
 let myPin = 8040;
 
 // Welcome message
-console.log(chalk.yellow("\n\tWELCOME TO ATM MACHINE.\n"));
+console.log(chalk.yellow("\n\tWELCOME TO DevNahyanK ATM MACHINE.\n"));
 
 // Enter pin
 let pinAnswer = await inquirer.prompt([
@@ -62,8 +63,8 @@ if (pinAnswer.pin === myPin) {
         );
         console.log(`Your Remaining Balance is: ${myBalance}$`);
       }
-    } 
-     // If the user selects Enter Amount
+    }
+    // If the user selects Enter Amount
     else if (withdrawAns.withdrawMethod === "Enter Amount") {
       let amountAns = await inquirer.prompt([
         {
@@ -88,7 +89,7 @@ if (pinAnswer.pin === myPin) {
   else if (operationsAns.operation === "Check Balance") {
     console.log(chalk.green(`Your Account Balance is ${myBalance}$`));
   }
-} 
+}
 //If pin is inncorrect
 else {
   console.log(chalk.red("Your Pin is Incorrect, Try Again!"));
